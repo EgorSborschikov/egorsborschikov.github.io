@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Авторизация</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color:#242736;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                height: 1225px; /* Общая высота контейнера */
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+            }
+
+            .left-area {
+                width: 612px;
+                height: 945px;
+                position: absolute;
+                top: 140px;
+                left: 201px;
+                border-radius: 10px 0px 0px 0px;
+                background-color: #5727EC;
+                opacity: 1; 
+            }
+
+            .right-area {
+                width: 826px;
+                height: 945px;
+                position: absolute;
+                top: 140px;
+                left: 833px;
+                border-radius: 10px 0px 0px 0px;
+                background-color: #FFFFFF;
+                opacity: 1; 
+                flex-direction: column;
+                align-items: center;
+            }
+            .form-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                width: 100%;
+                max-width: 726px;
+                margin-top: 50px;
+            }
+
+            .right-area h1 {
+                font-family: 'Manrope', sans-serif;
+                font-size: 70px;
+                font-weight: 700;
+                line-height: 67.2px;
+                text-align: left;
+                color: #5727EC;
+            }
+            .input-field {
+                width: 726px;
+                height: 110px;
+                position: absolute;
+                top: 446px;
+                left: 883px;
+                border-radius: 10px 0px 0px 0px;
+                border: 1px solid #D2D2D2;
+                opacity: 1;
+                display: flex;
+                align-items: center;
+                padding-left: 20px; /* Отступ слева для поля ввода */
+                text-align: center;
+            }
+
+            .input-field input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                font-size: 24px;
+                font-family: 'Manrope', sans-serif;
+                text-align: center;
+            }
+
+            .remember-me {
+                position: absolute;
+                top: 586px;
+                left: 883px;
+                display: flex;
+                align-items: center;
+                font-family: 'Manrope', sans-serif;
+                font-size: 24px;
+                color: #5727EC;
+            }
+            .checkbox-container {
+                display: flex;
+                align-items: center;
+            }
+            .checkbox-container label {
+                margin-left: 10px;
+            }
+            .forgot-password {
+                position: absolute;
+                top: 751px;
+                left: 1467px; 
+                font-family: 'Manrope', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24.59px;
+                text-align: right;
+                color: #5727EC;
+                text-decoration: none;
+            }
+            .login-button {
+                width: 726px;
+                height: 70px;
+                position: absolute;
+                top: 841px;
+                left: 883px;
+                border-radius: 10px 0px 0px 0px;
+                background-color: #5727EC;
+                opacity: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Manrope', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                color: #FFFFFF;
+                cursor: pointer;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-area">
+                <img src = "/media/egor/The data/duma/Group 313 1.png"/>
+            </div>
+            <div class="right-area">
+              <h1 style="font-family: 'Manrope', sans-serif; font-size: 70px; font-weight: 700; line-height: 67.2px; text-align: left; margin-top: 50px; margin-left: 10px;">Авторизация</h1>
+              <div class="form-container">
+                <input type="email" placeholder="Введите e-mail" style="width: 726px; height: 110px; border-radius: 10px 0px 0px 0px; border: 1px solid #D2D2D2; opacity: 1;">
+                <input type="password" placeholder="Введите пароль" style="width: 726px; height: 110px; border-radius: 10px 0px 0px 0px; border: 1px solid #D2D2D2; opacity: 1;">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Запомнить меня</label>
+                </div>
+                <a href="#" class="forgot-password">Забыли пароль?</a>
+                <div class="login-button">Войти</div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
