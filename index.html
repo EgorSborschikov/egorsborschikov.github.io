@@ -72,7 +72,7 @@
                 opacity: 1;
                 display: flex;
                 align-items: center;
-                padding-left: 20px; /* Отступ слева для поля ввода */
+                padding-left: 20px; 
                 text-align: center;
             }
 
@@ -97,35 +97,29 @@
                 color: #5727EC;
                 margin-left: 50px;
             }
-            .checkbox-container {
+            .right-area.checkbox-container {
                 display: flex;
                 align-items: center;
-                margin-left: 50px;
+                margin-left: 10px;
+                margin-top: 310px;
             }
-
-            .checkbox-container input[type="checkbox"] {
+            .right-area.checkbox-container input[type="checkbox"] {
                 margin-right: 10px;
                 vertical-align: middle;
+                accent-color: #5727EC;
             }
 
-            .checkbox-container label {
+            .right-area.checkbox-container label {
                 font-family: 'Manrope', sans-serif;
                 font-size: 24px;
-                color: #5727EC;
+                color: rgba(0, 0, 0, 0.54);
                 vertical-align: middle;
             }
-            .forgot-password {
-                position: absolute;
-                top: 751px;
-                left: 1467px; 
+            .right-area .forgot-password{
+                margin-right: 10px;
+                margin-top: 310px;
                 font-family: 'Manrope', sans-serif;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 24.59px;
-                text-align: right;
                 color: #5727EC;
-                text-decoration: none;
-                margin-right: 50px;
             }
             .login-button {
                 width: 726px;
@@ -159,10 +153,10 @@
               <input type="email" placeholder="Введите e-mail" style="width: 726px; height: 70px; margin-top: 60px; border-radius: 10px; border: 1px solid #D2D2D2; opacity: 1;">
               <div style="padding-top: 55px;"></div>
               <input type="password" placeholder="Введите пароль" style="width: 726px; height: 70px; border-radius: 10px; border: 1px solid #D2D2D2; opacity: 1;">
-              <a href="#" class="forgot-password" style="margin-right: 50px; padding-bottom: 310px;">Забыли пароль?</a>
-              <div class="checkbox-container" style="margin-left: 50px; display: flex; align-items: center;">
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me" style="padding-left: 10px; font-family: 'Manrope', sans-serif; color: #5727EC;">Запомнить меня</label>
+              <div class="checkbox-container">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me" style="margin-left: 10px; font-family: 'Manrope', sans-serif; color: #5727EC;">Запомнить меня</label>
+                    <a href="#" class="forgot-password">Забыли пароль?</a>
               </div>
               <button class="login-button">Войти</button>
             </div>
